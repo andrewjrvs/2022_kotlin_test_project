@@ -1,0 +1,14 @@
+@url=http://localhost:8080
+
+###
+
+GET {{url}}/api/wordy
+Content-Type: application/json
+
+
+###
+
+POST {{url}}/api/wordy
+Content-Type: application/json
+
+{"id": 123, "message": "this is another message"}
