@@ -6,8 +6,8 @@ plugins {
 	kotlin("jvm") version "1.6.21"
 	kotlin("plugin.spring") version "1.6.21"
 
-	// Apply the application plugin to add support for building a CLI application.
-    application
+	// // Apply the application plugin to add support for building a CLI application.
+    // application
 }
 
 group = "com.github.andrewjrvs"
@@ -29,6 +29,8 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	// testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0")
+	testImplementation("org.mockito:mockito-core:4.5.+")
 }
 
 tasks.withType<KotlinCompile> {
@@ -42,6 +44,6 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
-application {
-	mainClassName = "com.github.andrewjrvs.kotlin_test_project.KotlinTestProjectApplicationKt"
-}
+// application {
+// 	mainClassName = "com.github.andrewjrvs.kotlin_test_project.KotlinTestProjectApplicationKt"
+// }

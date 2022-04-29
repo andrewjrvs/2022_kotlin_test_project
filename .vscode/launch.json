@@ -10,7 +10,7 @@
             "name": "Kotlin Launch",
             "projectRoot": "${workspaceFolder}",
             "mainClass": "com/github/andrewjrvs/kotlin_test_project/KotlinTestProjectApplicationKt",
-            "preLaunchTask": "build"
+            //"preLaunchTask": "build"
         }
     ]
 }
