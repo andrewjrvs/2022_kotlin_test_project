@@ -46,4 +46,4 @@ You can then run your docker image with the following content
 
 ## TESTING
 
-Follow the same testing technique when running locally see [Testing](./README.md###Manual)
+Follow the same testing technique when running locally see [Testing](./README.md#Manual)

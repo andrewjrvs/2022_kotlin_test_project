@@ -4,7 +4,7 @@ This is a single endpoint application, that accepts a record, and returns a coun
 
 The application will accept content in the [wordy](./schemas/wordy-reply.schema.json) format and reply with the running count in the [wordy-reply](./schemas/wordy-reply.schema.json) format. **NOTE**: application is NOT currently validating the submitted content against this schema. 
 
-Instructions for posting to the endpoint can be found in the [Manual Testing](###Manual) section..
+Instructions for posting to the endpoint can be found in the [Manual Testing](#Manual) section..
 
 **Additional instructions** for running with docker can be found in [README_DOCKER.md](./README_DOCKER.md)
 
@@ -111,7 +111,7 @@ You can then run test, or kick off the application with `./gradlew bootRun`
 
 ### Manual
 
-You can manual test the application endpoint using the content in the `./http` folder, these were written to use in the VSCode [humao.rest-client extention](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) but should work with any applicationt hat accepts http language calls
+You can manual test the application endpoint using the content in the `./http` folder, these were written to use in the VSCode [humao.rest-client extention](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) but should work with any application hat accepts http language calls
 
 You can also use curl calls like the following 
 
