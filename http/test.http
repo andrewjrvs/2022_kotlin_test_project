@@ -26,3 +26,10 @@ POST {{url}}/api/wordy
 Content-Type: application/json
 
 {"id": 900, "message": "Long ago message"}
+
+###
+
+POST {{url}}/api/wordy
+Content-Type: application/json
+
+{"id": 900, "message": "Long ago message", "wordCount": 90000}

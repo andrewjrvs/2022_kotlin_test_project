@@ -26,6 +26,7 @@ class WordyController(private val wordyUtil: WordyUtil, private val wordyRepo: W
             // allow for updating... maybe if I have time I will move this over to aspectj...
             val svWrd = wordy.copy(wordCount=this.wordyUtil.CountWords(wordy.message))
             this.wordyRepo.save(svWrd)
+            println(svWrd)
         }
         var activeCount: Int? = this.wordyRepo.selectWordCounts()
         
