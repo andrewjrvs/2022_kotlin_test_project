@@ -14,7 +14,7 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.data.domain.PageRequest
 
 @SpringBootTest
-internal class `Wordly Util Test` {
+internal class `Wordy Util Test` {
 
     private val wordyUtil_regex: WordyUtil = WordyUtilRegexImpl()
 

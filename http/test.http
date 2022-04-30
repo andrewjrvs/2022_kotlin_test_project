@@ -11,4 +11,18 @@ Content-Type: application/json
 POST {{url}}/api/wordy
 Content-Type: application/json
 
-{"id": 123, "message": "this is another message"}
+{"id": 1, "message": "submit message"}
+
+###
+
+POST {{url}}/api/wordy
+Content-Type: application/json
+
+{"id": 2, "message": "Second Message"}
+
+###
+
+POST {{url}}/api/wordy
+Content-Type: application/json
+
+{"id": 900, "message": "Long ago message"}
