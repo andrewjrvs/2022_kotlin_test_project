@@ -123,6 +123,12 @@ curl -X POST -H "Content-Type: application/json" \
 # reply {"count": 4}
 ```
 
+if on windows you can use powershell with the following command
+
+```ps1
+Invoke-WebRequest -uri http://localhost:8080/api/wordy -Method POST -Body '{"id": 11, "message":"curl command was sent"}' -ContentType "application/json"
+```
+
 ### Automaic
 
 There are some automatic test that run on build, they can directly be called with `./gradlew test`

@@ -1,4 +1,3 @@
-
 package com.github.andrewjrvs.kotlin_test_project.utilities
 
 
@@ -9,9 +8,7 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.api.DynamicTest
 import org.junit.jupiter.api.TestFactory
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.data.domain.PageRequest
 
 @SpringBootTest
 internal class `Wordy Util Test` {

@@ -32,4 +32,52 @@ Content-Type: application/json
 POST {{url}}/api/wordy
 Content-Type: application/json
 
-{"id": 900, "message": "Long ago message", "wordCount": 90000}
+{"id": 904, "message": "Long ago message", "wordCount": 90000}
+
+###
+
+# max int bug
+POST {{url}}/api/wordy
+Content-Type: application/json
+
+{"id": 2147483648, "message": "This is a bug, which might be worth catching?"}
+
+###
+
+# no content
+POST {{url}}/api/wordy
+Content-Type: application/json
+
+{"id": 88, "message": null}
+
+###
+
+# no id
+POST {{url}}/api/wordy
+Content-Type: application/json
+
+{"id": null, "message": "test"}
+
+###
+
+# no id2
+POST {{url}}/api/wordy
+Content-Type: application/json
+
+{"message": "errroroorroroo ing"}
+
+###
+
+# no nothing...
+POST {{url}}/api/wordy
+Content-Type: application/json
+
+{}
+
+###
+
+# negative ID
+POST {{url}}/api/wordy
+Content-Type: application/json
+
+{"id": -8, "message": "errroroorroroo ing"}

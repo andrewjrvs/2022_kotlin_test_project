@@ -12,7 +12,7 @@ import javax.persistence.Column
 data class Wordy (
     @Id 
     @Column(name = "wrd_id")
-    val id: Int = 0,
+    val id: Int=0,
 
     @Column(name = "wrd_message")
     val message: String = "",
